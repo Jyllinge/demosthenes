@@ -30,6 +30,7 @@ def create_df_annotations(path, crossvalfolds={}):
 
     for filename in os.listdir(path):
         with open(os.path.join(path, filename), 'r', encoding='utf8') as f:
+            print(f)
             data = json.load(f)
             annotations = data["annotations"]
 
